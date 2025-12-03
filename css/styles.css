@@ -437,16 +437,18 @@ a:hover {
 @media (min-width: 1200px) {
   .home-mosaic img {
     max-width: 100%;
+    gap: var(--space-lg);
   }
 }
 
 @media (min-width: 1600px) {
   .home-content {
-    max-width: 100%;
+    max-width: 1800px;
+    gap: var(--space-md);
   }
   
   .home-mosaic img {
-    max-width: 100%;
+    max-width: 200%;
   }
 }
 
