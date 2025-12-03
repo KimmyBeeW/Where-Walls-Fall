@@ -55,7 +55,7 @@
   --gold: #c9a857;
   --gold-muted: #a8924d;
   --cream: #f5f0e6;
-  --cream-dark: #e8e0d0;
+  --cream-dark: #dccbb5;
   --charcoal: #1c1c1e;
   --charcoal-light: #2a2a2d;
   --slate: #3d3d42;
@@ -579,7 +579,7 @@ a:hover {
 }
 
 .resource-item .citation .journal {
-  color: var(--teal-light);
+  color: var(--cream);
 }
 
 .resource-item .link {
@@ -592,6 +592,34 @@ a:hover {
 
 .resource-item .link:hover {
   color: var(--gold);
+}
+
+.resource-item .scripture {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--cream-dark);
+}
+
+.resource-item .scripture .book {
+  color: var(--cream);
+}
+
+.resource-item .scripture .ref {
+  font-style: italic;
+  color: var(--cream-dark);
+  display: block;
+}
+
+.resource-item .scripture .quote {
+  color: var(--cream);
+  display: block;
+}
+
+.resource-item .emphasis {
+  color: var(--cream-dark);
+  font-size: .7rem;
+  font-style: italic;
+  display: block;
 }
 
 /* ===== Share/Action Section ===== */
