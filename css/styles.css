@@ -1,5 +1,6 @@
 /* Where Walls Fall - A contemplative design inspired by the mosaic */
 
+
 /* ===== Custom Fonts - Metropolis ===== */
 
 /* Regular */
@@ -47,6 +48,8 @@
   /* Colors drawn from the mosaic artwork */
   --terracotta: #a04b3a;
   --terracotta-deep: #8b3a2f;
+  --terracotta-mid: #c78d7a;
+  --terracotta-light: #d8b8aa;
   --teal-dark: #1a4f5c;
   --teal-light: #2d7d8a;
   --gold: #c9a857;
@@ -286,6 +289,15 @@ a:hover {
 }
 
 /* ===== Poem Section ===== */
+.poem-head {
+  margin-bottom: var(--space-sm);
+  max-width: 800px;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+
 .poem-section {
   max-width: 800px;
   margin: 0 auto;
@@ -319,7 +331,7 @@ a:hover {
 
 /* Standard verses: first 2 lines red, last 3 cream */
 .poem .line--red {
-  color: var(--terracotta);
+  color: var(--terracotta-mid);
 }
 
 /* Last verse: last 3 lines gold */
@@ -329,7 +341,7 @@ a:hover {
 
 /* Author attribution */
 .poem-author {
-  margin-top: var(--space-lg);
+  margin-top: var(--space-md);
   font-family: var(--font-display);
   font-size: 1.1rem;
   color: var(--cream);
@@ -396,7 +408,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-xl);
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: var(--space-xl) var(--space-md);
   align-items: start;
@@ -416,7 +428,6 @@ a:hover {
 
 .home-mosaic img {
   width: 100%;
-  max-width: 700px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
@@ -431,7 +442,7 @@ a:hover {
 
 @media (min-width: 1600px) {
   .home-content {
-    max-width: 1600px;
+    max-width: 100%;
   }
   
   .home-mosaic img {
@@ -439,11 +450,21 @@ a:hover {
   }
 }
 
+/* Mosaic description*/
+.mosaic-description {
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-sm); 
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--cream-dark); 
+  opacity: 0.85;
+}
+
 /* Mosaic artist attribution */
 .mosaic-artist {
   margin-top: var(--space-sm);
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--cream);
   text-align: center;
   opacity: 0;
