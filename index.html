@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Where Walls Fall - An exploration of racism in America through poetry and art. Learn, reflect, and take action.">
+  <meta name="keywords" content="racism, history, poetry, art, education, social justice, redlining, civil rights">
+  <meta property="og:title" content="Where Walls Fall">
+  <meta property="og:description" content="An exploration of racism in America through poetry and art.">
+  <meta property="og:image" content="Mosaic.jpg">
+  <meta property="og:type" content="website">
+  
+  <title>Where Walls Fall</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Where Walls Fall</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="share.html">Share</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Banner Header -->
+  <header class="banner-header">
+    <img 
+      src="banner.jpg" 
+      alt="Mosaic artwork banner - terracotta tiles with white cracks and swirling golden patterns" 
+    >
+    <div class="banner-overlay">
+      <h1>Where Walls Fall</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="home-content">
+    <!-- Poem (Left on Desktop, Bottom on Mobile) -->
+    <section class="home-poem" aria-label="Poem">
+      <article class="poem">
+        <!-- Verse 1 -->
+        <div class="stanza">
+          <span class="line line--red">Restrictions in the guise of equality,</span>
+          <span class="line line--red">walls raised in the name of protection.</span>
+          <span class="line">Policies dressed as defense</span>
+          <span class="line">that decide who moves "freely"</span>
+          <span class="line">and those trapped darkly by the gate.</span>
+        </div>
+
+        <!-- Verse 2 -->
+        <div class="stanza">
+          <span class="line line--red">Division is the child of hate;</span>
+          <span class="line line--red">hate is born of the fear we create.</span>
+          <span class="line">Fear drawn from tales</span>
+          <span class="line">passed around like the flu,</span>
+          <span class="line">polished until they look like truth.</span>
+        </div>
+
+        <!-- Verse 3 -->
+        <div class="stanza">
+          <span class="line line--red">Red lines the streets of opportunity,</span>
+          <span class="line line--red">corridors narrowing with every stroke.</span>
+          <span class="line">Jealousy burns the city of success,</span>
+          <span class="line">a quiet fire, buried in cinders,</span>
+          <span class="line">smoke settling on dreams broken and torn.</span>
+        </div>
+
+        <!-- Verse 4 -->
+        <div class="stanza">
+          <span class="line line--red">A pool, buried in a park,</span>
+          <span class="line line--red">water drained rather than shared.</span>
+          <span class="line">A Confederate statue, torn apart,</span>
+          <span class="line">finally yielding to the weight of history,</span>
+          <span class="line">the true purpose, hate, was never a mystery.</span>
+        </div>
+
+        <!-- Verse 5 -->
+        <div class="stanza">
+          <span class="line line--red">They carved out "race" from smoke and air,</span>
+          <span class="line line--red">a fiction built to sort and rank.</span>
+          <span class="line">"My neighbor is my enemy."</span>
+          <span class="line">A tale of difference, sharp and deep,</span>
+          <span class="line">so those in power, power keep.</span>
+        </div>
+
+        <!-- Verse 6 -->
+        <div class="stanza">
+          <span class="line line--red">But boundaries are brittle</span>
+          <span class="line line--red">when held up to the light.</span>
+          <span class="line">They crack at the touch</span>
+          <span class="line">of a truth long known</span>
+          <span class="line">but spoken in whispers.</span>
+        </div>
+
+        <!-- Verse 7 (Last) - first 2 white, last 3 gold -->
+        <div class="stanza">
+          <span class="line">Voices once muted</span>
+          <span class="line">rise in a hum, then a chorus.</span>
+          <span class="line line--gold">Change rarely shouts at first;</span>
+          <span class="line line--gold">it gathers, slow breath, soft step,</span>
+          <span class="line line--gold">until silence can no longer hold.</span>
+        </div>
+      </article>
+      
+      <p class="poem-author">— Kimberly Bartholomew Williams</p>
+    </section>
+
+    <!-- Mosaic Image (Right on Desktop, Top on Mobile) -->
+    <aside class="home-mosaic">
+      <img 
+        src="Mosaic.jpg" 
+        alt="A mosaic artwork with flowing patterns - terracotta tiles with white cracks symbolizing walls breaking, swirling golden center representing hope, and flowing blue waves representing change" 
+      >
+      <p class="mosaic-artist">— Avery Wolfenbarger</p>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Where Walls Fall. Created to educate and inspire change.</p>
+    <p class="footer-disclaimer">Banner image generated by Gemini.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Auto-update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile navigation
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    navToggle.addEventListener('click', () => {
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !isExpanded);
+      navToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
