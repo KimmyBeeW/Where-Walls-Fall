@@ -584,7 +584,7 @@ a:hover {
 
 .resource-item .link {
   display: inline-block;
-  margin-top: var(--space-sm);
+  margin-top: var(--space-xs);
   font-size: 0.85rem;
   color: var(--teal-light);
   word-break: break-all;
