@@ -398,6 +398,7 @@ a:hover {
   font-size: 1.1rem;
   color: var(--cream-dark);
   margin-top: var(--space-sm);
+  padding: 0 var(--space-md);
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
   opacity: 0;
   animation: fadeSlideUp 0.8s ease-out 0.5s forwards;
