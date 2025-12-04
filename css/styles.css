@@ -45,8 +45,8 @@
 
 /* ===== CSS Variables - Mosaic Color Palette ===== */
 :root {
-  /* Colors drawn from the mosaic artwork */
-  --terracotta: #a04b3a;
+  /* Colors from the banner */
+  /* --terracotta: #a04b3a;
   --terracotta-deep: #8b3a2f;
   --terracotta-mid: #c78d7a;
   --terracotta-light: #d8b8aa;
@@ -55,7 +55,27 @@
   --gold: #c9a857;
   --gold-muted: #a8924d;
   --cream: #f5f0e6;
-  --cream-dark: #dccbb5;
+  --cream-dark: #dccbb5; */
+
+  /* Colors from Avery's Mosaic*/
+  --brown: #7d5d49;
+  --brown-deep: #49281A;
+  --brown-mid: #B19881;
+  --brown-light: #B69E93;
+  --red-bright: #DB0012;
+  --hot-pink: #FF3C65;
+  --orange: #F48C37;
+  --orange-dark: #F86D37;
+  --pink: #D7948F;
+  --teal: #00ACC5;
+  --blue: #0B67C9;
+  --blue-dark: #242AAE;
+  --yellow: #FEEC00;
+  --silver: #C0C0C0;
+  --obsidian: #000101;
+  --pearl: #E4E4E8;
+
+  /* Background Colors*/
   --charcoal: #1c1c1e;
   --charcoal-light: #2a2a2d;
   --slate: #3d3d42;
@@ -90,7 +110,7 @@ html {
 body {
   font-family: var(--font-body);
   background-color: var(--charcoal);
-  color: var(--cream);
+  color: var(--pearl);
   line-height: 1.7;
   min-height: 100vh;
   overflow-x: hidden;
@@ -118,13 +138,13 @@ h3 {
 }
 
 a {
-  color: var(--teal-light);
+  color: var(--teal);
   text-decoration: none;
   transition: color var(--transition-smooth);
 }
 
 a:hover {
-  color: var(--gold);
+  color: var(--pink);
 }
 
 /* ===== Navigation ===== */
@@ -151,7 +171,7 @@ a:hover {
 .nav-logo {
   font-family: var(--font-display);
   font-size: 1.1rem;
-  color: var(--cream);
+  color: var(--pearl);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   opacity: 0;
@@ -174,7 +194,7 @@ a:hover {
 .nav-links li:nth-child(3) { animation-delay: 0.6s; }
 
 .nav-links a {
-  color: var(--cream-dark);
+  color: var(--silver);
   font-size: 0.9rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -189,7 +209,7 @@ a:hover {
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--gold);
+  background: var(--pink);
   transition: width var(--transition-smooth);
 }
 
@@ -199,7 +219,7 @@ a:hover {
 }
 
 .nav-links a.active {
-  color: var(--gold);
+  color: var(--pink);
 }
 
 /* Mobile nav toggle */
@@ -215,7 +235,7 @@ a:hover {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--cream);
+  background: var(--pearl);
   margin: 5px 0;
   transition: var(--transition-smooth);
 }
@@ -268,7 +288,7 @@ a:hover {
   font-weight: 400;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--cream);
+  color: var(--pearl);
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -284,7 +304,7 @@ a:hover {
 .scroll-indicator svg {
   width: 24px;
   height: 24px;
-  stroke: var(--cream);
+  stroke: var(--pearl);
   opacity: 0.6;
 }
 
@@ -295,8 +315,8 @@ a:hover {
   font-size: clamp(2rem, 2.5vw, 3rem);
   font-family: var(--font-display);
   font-weight: 600;
+  color: var(--pink)
 }
-
 
 .poem-section {
   max-width: 800px;
@@ -308,7 +328,7 @@ a:hover {
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   line-height: 2;
-  color: var(--cream-dark);
+  color: var(--silver);
 }
 
 .poem .stanza {
@@ -329,14 +349,14 @@ a:hover {
   display: block;
 }
 
-/* Standard verses: first 2 lines red, last 3 cream */
+/* Standard verses: first 2 lines red, last 3 pearl */
 .poem .line--red {
-  color: var(--terracotta-mid);
+  color: var(--brown-mid);
 }
 
-/* Last verse: last 3 lines gold */
-.poem .line--gold {
-  color: var(--gold);
+/* Last verse: last 3 lines pink */
+.poem .line--pink {
+  color: var(--pink);
 }
 
 /* Author attribution */
@@ -344,7 +364,7 @@ a:hover {
   margin-top: var(--space-md);
   font-family: var(--font-display);
   font-size: 1.1rem;
-  color: var(--cream);
+  color: var(--pearl);
   opacity: 0;
   animation: fadeIn 0.8s ease-out 0.6s forwards;
 }
@@ -388,7 +408,7 @@ a:hover {
   font-weight: 400;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--cream);
+  color: var(--pearl);
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
   opacity: 0;
   animation: fadeSlideUp 0.8s ease-out 0.3s forwards;
@@ -396,7 +416,7 @@ a:hover {
 
 .banner-header .subtitle {
   font-size: 1.1rem;
-  color: var(--cream-dark);
+  color: var(--silver);
   margin-top: var(--space-sm);
   padding: 0 var(--space-md);
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
@@ -459,7 +479,7 @@ a:hover {
   margin-bottom: var(--space-sm); 
   font-size: 1rem;
   font-style: italic;
-  color: var(--cream-dark); 
+  color: var(--silver); 
   opacity: 0.85;
 }
 
@@ -468,7 +488,7 @@ a:hover {
   margin-top: var(--space-sm);
   font-family: var(--font-display);
   font-size: 1.1rem;
-  color: var(--cream);
+  color: var(--pearl);
   text-align: center;
   opacity: 0;
   animation: fadeIn 0.8s ease-out 0.8s forwards;
@@ -512,7 +532,7 @@ a:hover {
 
 .page-header h1 {
   position: relative;
-  color: var(--cream);
+  color: var(--pearl);
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
   opacity: 0;
   animation: fadeSlideUp 0.8s ease-out 0.2s forwards;
@@ -520,7 +540,7 @@ a:hover {
 
 .page-header .subtitle {
   font-size: 1.1rem;
-  color: var(--cream-dark);
+  color: var(--silver);
   margin-top: var(--space-xs);
   padding: 0 var(--space-md);
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
@@ -546,7 +566,7 @@ a:hover {
 .resource-category:nth-child(3) { animation-delay: 0.5s; }
 
 .resource-category h2 {
-  color: var(--gold);
+  color: var(--pink);
   margin-bottom: var(--space-md);
   padding-bottom: var(--space-sm);
   border-bottom: 1px solid var(--slate);
@@ -557,23 +577,23 @@ a:hover {
   padding: var(--space-md);
   background: var(--charcoal-light);
   border-radius: 8px;
-  border-left: 3px solid var(--teal-dark);
+  border-left: 3px solid var(--blue);
   transition: border-color var(--transition-smooth), transform var(--transition-smooth);
 }
 
 .resource-item:hover {
-  border-left-color: var(--teal-light);
+  border-left-color: var(--teal);
   transform: translateX(4px);
 }
 
 .resource-item .citation {
   font-size: 0.95rem;
   line-height: 1.8;
-  color: var(--cream-dark);
+  color: var(--silver);
 }
 
 .resource-item .citation .authors {
-  color: var(--cream);
+  color: var(--pearl);
 }
 
 .resource-item .citation .title {
@@ -581,44 +601,44 @@ a:hover {
 }
 
 .resource-item .citation .journal {
-  color: var(--cream);
+  color: var(--pearl);
 }
 
 .resource-item .link {
   display: inline-block;
   margin-top: var(--space-xs);
   font-size: 0.85rem;
-  color: var(--teal-light);
+  color: var(--teal);
   word-break: break-all;
 }
 
 .resource-item .link:hover {
-  color: var(--gold);
+  color: var(--pink);
 }
 
 .resource-item .scripture {
   font-size: 0.95rem;
   line-height: 1.8;
-  color: var(--cream-dark);
+  color: var(--silver);
 }
 
 .resource-item .scripture .book {
-  color: var(--cream);
+  color: var(--pearl);
 }
 
 .resource-item .scripture .ref {
   font-style: italic;
-  color: var(--cream-dark);
+  color: var(--silver);
   display: block;
 }
 
 .resource-item .scripture .quote {
-  color: var(--cream);
+  color: var(--pearl);
   display: block;
 }
 
 .resource-item .emphasis {
-  color: var(--cream-dark);
+  color: var(--silver);
   font-size: .7rem;
   font-style: italic;
   display: block;
@@ -641,25 +661,25 @@ a:hover {
   font-size: 1.15rem;
   line-height: 1.9;
   margin-bottom: var(--space-md);
-  color: var(--cream);
+  color: var(--pearl);
 }
 
 .hashtag {
   display: inline-block;
   font-family: var(--font-display);
   font-size: clamp(2rem, 5vw, 3.5rem);
-  color: var(--gold);
+  color: var(--pink);
   margin-top: var(--space-sm);
   margin-bottom: var(--space-lg);
   padding: var(--space-sm) var(--space-md);
-  border: 2px solid var(--gold-muted);
+  border: 2px solid var(--pink-muted);
   border-radius: 8px;
   transition: all var(--transition-smooth);
   cursor: default;
 }
 
 .hashtag:hover {
-  background: var(--gold);
+  background: var(--pink);
   color: var(--charcoal);
   transform: scale(1.02);
 }
@@ -680,7 +700,7 @@ a:hover {
 .share-mosaic figcaption {
   margin-top: var(--space-sm);
   font-size: 0.9rem;
-  color: var(--cream-dark);
+  color: var(--pearl);
   opacity: 0.7;
   font-style: italic;
 }
@@ -695,7 +715,7 @@ a:hover {
 
 .footer p {
   font-size: 0.85rem;
-  color: var(--cream-dark);
+  color: var(--silver);
   opacity: 0.6;
 }
 
@@ -875,7 +895,7 @@ a:hover {
 /* Focus styles for keyboard navigation */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--gold);
+  outline: 2px solid var(--pink);
   outline-offset: 4px;
 }
 
@@ -884,7 +904,7 @@ button:focus-visible {
   position: absolute;
   top: -100%;
   left: var(--space-sm);
-  background: var(--gold);
+  background: var(--pink);
   color: var(--charcoal);
   padding: var(--space-xs) var(--space-sm);
   z-index: 1000;
